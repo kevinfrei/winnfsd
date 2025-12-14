@@ -11,7 +11,7 @@
 #include <time.h>
 #include <share.h>
 #include "shlwapi.h"
-#define BUFFER_SIZE 1000
+#define BUFFER_SIZE 2500
 
 enum
 {
@@ -1216,7 +1216,8 @@ nfsstat3 CNFS3Prog::ProcedureREADDIR(void)
     bool bFollows;
     nfsstat3 stat;
     char filePath[MAXPATHLEN];
-    int handle, nFound;
+    intptr_t handle;
+    int nFound;
     struct _finddata_t fileinfo;
     unsigned int i, j;
 
@@ -1299,7 +1300,8 @@ nfsstat3 CNFS3Prog::ProcedureREADDIRPLUS(void)
     bool eof;
     nfsstat3 stat;
     char filePath[MAXPATHLEN];
-    int handle, nFound;
+    intptr_t handle;
+    int nFound;
     struct _finddata_t fileinfo;
     unsigned int i, j;
     bool bFollows;
