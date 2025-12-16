@@ -2,14 +2,14 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/github/winnfsd/winnfsd?svg=true)](https://ci.appveyor.com/project/MarcHarding/winnfsd-6y1xi/branch/master)
 
-Introduction
-------------
-* Fork of WinNFSd_edited by ZeWarden(http://github.com/ZeWaren/WinNFSd_edited), based on WinNFSd by vincentgao (http://sourceforge.net/projects/winnfsd/).
-* License: GPL.
-* Runs on all major versions of Windows.
+## Introduction
 
-Description
---------------------
+- Fork of WinNFSd_edited by ZeWarden(http://github.com/ZeWaren/WinNFSd_edited), based on WinNFSd by vincentgao (http://sourceforge.net/projects/winnfsd/).
+- License: GPL.
+- Runs on all major versions of Windows.
+
+## Description
+
 WinNFSd is a Network File System V3 (NFS) server for Windows.
 
 You can use any NFS client to mount a directory of Windows and read/write files via NFS v3 protocol. It is useful when you usually access files of Windows on Linux and for especially for virtual machines, since it is much faster than shared folders.
@@ -26,9 +26,8 @@ C:\path\to\another\mount > /another-alias
 Then start winnfsd.exe like this:
 `WinNFSd.exe -pathFile C:\path\to\your\pathfile`
 
+## Usage
 
-Usage
--------------------
 ```
 =====================================================
 WinNFSd 2.2.0
