@@ -59,13 +59,18 @@ static void printLine(void)
 static void printAbout(void)
 {
     printLine();
-    printf("WinNFSd {{VERSION}} [{{HASH}}]\n");
+#if !defined(MY_BUILD_VERSION)
+    printf("WinNFSd 2.5.0-AMD64\n");
+#else
+    printf("WinNFSd %s [%s]\n", MY_BUILD_VERSION, MY_BUILD_HASH);
+#endif
     printf("Network File System server for Windows\n");
     printf("Copyright (C) 2005 Ming-Yang Kao\n");
     printf("Edited in 2011 by ZeWaren\n");
     printf("Edited in 2013 by Alexander Schneider (Jankowfsky AG)\n");
-	printf("Edited in 2014 2015 by Yann Schepens\n");
-	printf("Edited in 2016 by Peter Philipp (Cando Image GmbH), Marc Harding\n");
+    printf("Edited in 2014 2015 by Yann Schepens\n");
+    printf("Edited in 2016 by Peter Philipp (Cando Image GmbH), Marc Harding\n");
+    printf("AMD64 cleanup in 2025 by Kevin Frei\n");
     printLine();
 }
 
